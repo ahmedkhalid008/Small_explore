@@ -20,3 +20,11 @@ CHANGE COLUMN `old_tablename` `new_tabelname` VARCHAR(50);
 SELECT COL_1,COL_2, COL_3,COL_4, COL_5, COL_6,COL_7, COL_8, COUNT(*) AS count_duplicates 
 FROM khalid GROUP BY COL_1,COL_2, COL_3,COL_4, COL_5, COL_6,COL_7, COL_8 
 HAVING COUNT(*) > 1;
+
+5.count 
+
+SELECT 
+    SUM(CASE WHEN `COL_1` = 'Male' THEN 1 ELSE 0 END) AS Male_Count,
+    SUM(CASE WHEN `COL_1` = 'Female' THEN 1 ELSE 0 END) AS Female_Count
+FROM studentsperformance;
+
