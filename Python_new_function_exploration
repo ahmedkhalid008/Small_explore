@@ -1,0 +1,12 @@
+Greeting from Khalid Ahmed Tepu.
+Today I explore a nice thing in python programmig which is a new user input taking option named "eval"
+It creates a soution of an equation without any issue. When you take any kind of user input and want to make any operation on it . Then you can use this "eval" function for 
+solving this type of equation . The programme will looks like :-
+
+#The optimal using Function which is workable in python.
+
+r = eval(input("Enter your equation here :  "))
+print(r)
+
+Khalid Ahmed Tepu
+Date :28/11/2025
