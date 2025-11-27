@@ -1,0 +1,22 @@
+1.full table copy 
+
+CREATE TABLE new_table LIKE old_table; 
+
+2.full table data insert into new table
+
+INSERT INTO new_table
+SELECT *
+FROM old_table;
+
+3.if there is any space in column name then it should replace with _ for analysis data more accurately
+
+ALTER TABLE table_naem 
+CHANGE COLUMN `old_tablename` `new_tabelname` VARCHAR(50);
+
+
+
+4.Duplicate data check
+
+SELECT COL_1,COL_2, COL_3,COL_4, COL_5, COL_6,COL_7, COL_8, COUNT(*) AS count_duplicates 
+FROM khalid GROUP BY COL_1,COL_2, COL_3,COL_4, COL_5, COL_6,COL_7, COL_8 
+HAVING COUNT(*) > 1;
