@@ -28,3 +28,17 @@ SELECT
     SUM(CASE WHEN `COL_1` = 'Female' THEN 1 ELSE 0 END) AS Female_Count
 FROM studentsperformance;
 
+
+
+6.
+
+Now if we want to know that what type of item or are existing in a sepate column then we can use this SQL :
+
+select COL_4,
+count(*) as total_count 
+from khalid
+group  by COL_4;
+
+
+7.
+
