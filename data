@@ -40,5 +40,8 @@ from khalid
 group  by COL_4;
 
 
-7.
+7. to add a serial to my existing table data
+
+ALTER TABLE khalid
+ADD COLUMN serial INT AUTO_INCREMENT PRIMARY KEY;
 
