@@ -45,3 +45,14 @@ group  by COL_4;
 ALTER TABLE khalid
 ADD COLUMN serial INT AUTO_INCREMENT PRIMARY KEY;
 
+
+8. to make each first letter capital of a column 
+
+UPDATE khalid
+SET Parental_Education_Level = CONCAT(
+    UPPER(SUBSTRING(Parental_Education_Level, 1, 1)),
+    LOWER(SUBSTRING(Parental_Education_Level, 2))
+);
+
+9.
+
