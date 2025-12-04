@@ -54,5 +54,13 @@ SET Parental_Education_Level = CONCAT(
     LOWER(SUBSTRING(Parental_Education_Level, 2))
 );
 
-9.
+9.to check NULL values in a table 
+
+SELECT
+    SUM(CASE WHEN Reading_Score IS NULL THEN 1 ELSE 0 END) AS Gender_n,
+    SUM(CASE WHEN Writing_Score IS NULL THEN 1 ELSE 0 END) AS e
+ 
+FROM khalid;
+
+10. 
 
