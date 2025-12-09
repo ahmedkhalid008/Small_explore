@@ -57,10 +57,14 @@ SET Parental_Education_Level = CONCAT(
 9.to check NULL values in a table 
 
 SELECT
-    SUM(CASE WHEN Reading_Score IS NULL THEN 1 ELSE 0 END) AS Gender_n,
+    SUM(CASE WHEN Reading   _Score IS NULL THEN 1 ELSE 0 END) AS Gender_n,
     SUM(CASE WHEN Writing_Score IS NULL THEN 1 ELSE 0 END) AS e
  
 FROM khalid;
 
-10. 
+10. Totall Row count : 
 
+SELECT COUNT(*)
+from table_name
+
+11.
