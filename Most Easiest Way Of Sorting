@@ -1,0 +1,19 @@
+#There is tricks for sorting in Python . 
+
+We Know that , Binary Search is a great Algorithm for Data structure and Algorithm .
+So , when we want to perform Binary search in any array  then Array should be in a sorted Mode.
+To Perform this sorting Operation Quickly , we can this Build in Mehtod in Python . 
+
+-- .sort() 
+
+Suppose An Array is given have a to sort it . 
+
+Given Array ,
+
+arr=[64,34,55,22,12,13,14,15,61,18,19,17]
+arr.sort()       #simply use this method to sort in Only two lines.
+print(arr)
+
+
+Then the Array will sorted in a very short time and will be a time saving and more benificial for the Coders .
+
